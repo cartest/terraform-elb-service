@@ -8,7 +8,6 @@ variable "tags" {
   type = "map"
 
   default = {
-    App-Stack-Color = ""
     Environment     = ""
     Application     = ""
     Tier            = ""
