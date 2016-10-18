@@ -1,4 +1,5 @@
 resource "aws_security_group_rule" "rsyslog" {
+  count             = "${var.open_access}"
   type              = "ingress"
   protocol          = "tcp"
   from_port         = "443"

@@ -49,3 +49,9 @@ variable "subnets_cidr" {
   default     = []
   description = "List of CIDR blocks for microservice subnets"
 }
+
+variable "open_access" {
+  type = "string"
+  default = "0"
+  description = "Toggle for enabling public access to the service."
+}
