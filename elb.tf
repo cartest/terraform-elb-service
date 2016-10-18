@@ -2,7 +2,7 @@
   name                        = "${var.tags["Environment"]}-${var.tags["Application"]}-${var.tags["Tier"]}-${var.name}-SG"
   internal                    = false
   subnets                     = ["${var.subnets_ids}"]
-  /*security_groups             = ["${aws_security_group.feature-sg-feature.id}"]
+  security_groups             = ["${aws_security_group.feature-sg-feature.id}"]
   instances                   = ["${aws_instance.feature-publishing-1.id}", "${aws_instance.feature-publishing-2.id}"]
   cross_zone_load_balancing   = true
   idle_timeout                = 400
@@ -34,5 +34,5 @@
     Name        = "${var.local["env"]}-publishing-internal-elb-http"
     project     = "${var.global["project"]}"
     environment = "${var.local["env"]}"
-  }*/
+  }
 }*/
